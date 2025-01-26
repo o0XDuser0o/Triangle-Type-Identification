@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <title>Triangle Type Identification System</title>    
+</head>
+<body>
+    <h1>Triangle Type Identification </h1>
+    <div class="flex-container">
+        <div>
+            <p>Enter the length of sides</p>
+            <div class="left">
+                <div class="input-line">
+                    <label for="side_1_box">Side1 : </label>
+                    <input type="text" id="side_1_box" value="">
+                </div>
+                <div class="input-line">
+                    <label for="side_2_box">Side2 : </label>
+                    <input type="text" id="side_2_box" value="">
+                </div>
+                <div class="input-line">
+                    <label for="side_3_box">Side3 : </label>
+                    <input type="text" id="side_3_box" value="">
+                </div>
+            </div>
+            <div class="left">
+                <button onclick="submit()" class="brown-bg">Enter</button>
+                <button onclick="reset()" class="brown-light-bg">Reset</button>
+            </div>
+        </div>
+        <div>
+            <p>Result</p>
+            <div><canvas id="triangleCanvas" width="200" height="200" ></canvas></div>
+            <p id="output_text" class="brown-bg">Please enter the sides length</p>
+        </div>
+    </div>
+    <p id="alert_text">Alert here</p>
+    <script src="script.js"></script>
+</body>
+</html>

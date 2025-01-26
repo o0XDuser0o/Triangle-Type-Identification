@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to bottom, #E1D5CA1A 10%, #A1785633 20%);
+    height: 100vh;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+h1 {
+    font-size: 2vw;
+    font-weight: 500;
+    color: #A17856;
+}
+
+p {
+    font-size: 1.75vw;
+    text-align: center;
+    color: #A17856;
+}
+
+button{
+    color: #FBFBFB;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 600;
+    font-size: 1.40vw;
+}
+
+label{
+    align-content: center;
+}
+
+input{
+    width: 75%;
+    border: none;
+    background-color: #E1D5CA;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.brown-bg{
+    background-color: #A17856;
+    color: #FBFBFB;
+    border-radius: 10px;
+}
+
+.brown-light-bg{
+    background-color: #CBB098;
+    color: #FBFBFB;
+    border-radius: 10px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-container > div {
+    background-color: #FBFBFB;
+    border-radius: 30px;
+    width: 629px;
+    margin-right: 1rem;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flex-container > div > * {
+    text-align: center;
+}
+
+.left {
+    padding: 20px;
+}
+
+.input-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+
+#alert_text {
+    color: #FBFBFB;
+    background-color: #FFA4A4;
+    border-radius: 10px;
+    text-align: left;
+    padding: 8px;
+    visibility: hidden;
+}
