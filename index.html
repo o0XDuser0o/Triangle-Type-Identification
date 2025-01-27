@@ -9,53 +9,52 @@
 <body>
     <div id="popupOverlay" class="hidden" onclick="close_doc()">
         <div id="popup">
-            <h1 id="popup-header">How to use</h1>
-            <p class="popup-para">Input Fields for Side Lengths:</p>
+            <h1 id="popup_header">How to use</h1>
+            <p class="popup-para" id="info_header1">Input Fields for Side Lengths:</p>
             <ul>
-                <li>Input Fields for Side Lengths:</li>
-                <li>Side 1: The first input field is labeled "Side 1". Enter the length of the first side in the field to the right of the label.</li>
-                <li>Side 2: The second input field is labeled "Side 2". Enter the length of the second side in the field to the right of the label.</li>
-                <li>Side 3: The third input field is labeled "Side 3". Enter the length of the third side in the field to the right of the label.</li>
+                <li id="info_content1_1">Side 1: The first input field is labeled "Side 1". Enter the length of the first side in the field to the right of the label.</li>
+                <li id="info_content1_2">Side 2: The second input field is labeled "Side 2". Enter the length of the second side in the field to the right of the label.</li>
+                <li id="info_content1_3">Side 3: The third input field is labeled "Side 3". Enter the length of the third side in the field to the right of the label.</li>
             </ul>
-            <p class="popup-para">Confirming the Input:</p>
+            <p class="popup-para" id="info_header2">Confirming the Input:</p>
             <ul>
-                <li>Below the input fields, there is an "Enter" button. Click this button to confirm your inputs and calculate the type of triangle based on the entered side lengths.</li>
+                <li id="info_content2_1">Below the input fields, there is an "Enter" button. Click this button to confirm your inputs and calculate the type of triangle based on the entered side lengths.</li>
             </ul>
-            <p class="popup-para">Resetting the Input Fields:</p>
+            <p class="popup-para" id="info_header3">Resetting the Input Fields:</p>
             <ul>
-                <li>Next to the "Enter" button, there is a "Reset" button. Use this to clear all the input fields and start over.</li>
+                <li id="info_content3_1">Next to the "Enter" button, there is a "Reset" button. Use this to clear all the input fields and start over.</li>
             </ul>
         </div>
       </div>
     <div id="top">
-        <button class="brown-light-bg">English -> Thai</button>
+        <button class="brown-light-bg" id="switchlanguagebutton" onclick="switch_language()">English -> Thai</button>
         <button onclick="show_doc()" class="brown-bg">Info</button>
     </div>
-    <h1>Triangle Type Identification </h1>
+    <h1 id="type_header">Triangle Type Identification</h1>
     <div class="flex-container">
         <div>
-            <p>Enter the length of sides</p>
+            <p id="input_header">Enter the length of sides</p>
             <div class="left">
                 <div class="input-line">
-                    <label for="side_1_box">Side1 : </label>
+                    <label for="side_1_box" id="side1">Side1 : </label>
                     <input type="text" id="side_1_box" value="">
                 </div>
                 <div class="input-line">
-                    <label for="side_2_box">Side2 : </label>
+                    <label for="side_2_box" id="side2">Side2 : </label>
                     <input type="text" id="side_2_box" value="">
                 </div>
                 <div class="input-line">
-                    <label for="side_3_box">Side3 : </label>
+                    <label for="side_3_box" id="side3">Side3 : </label>
                     <input type="text" id="side_3_box" value="">
                 </div>
             </div>
             <div class="left">
-                <button onclick="submit()" class="brown-bg">Enter</button>
-                <button onclick="reset()" class="brown-light-bg">Reset</button>
+                <button onclick="submit()" class="brown-bg" id="enterbutton">Enter</button>
+                <button onclick="reset()" class="brown-light-bg" id="resetbutton">Reset</button>
             </div>
         </div>
         <div>
-            <p>Result</p>
+            <p id="result_header">Result</p>
             <div><canvas id="triangleCanvas" width="200" height="200" ></canvas></div>
             <p id="output_text" class="brown-bg">Please enter the sides length</p>
         </div>
