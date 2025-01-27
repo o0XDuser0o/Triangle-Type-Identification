@@ -37,6 +37,8 @@ button{
 
 label{
     align-content: center;
+    font-size: 1.75vw;
+    color: #A17856;
 }
 
 input{
@@ -49,6 +51,7 @@ input{
 
 li {
     color: #A17856;
+    font-size: 1.25vw;
 }
 
 .brown-bg{
@@ -137,13 +140,28 @@ li {
     background-color: #FBFBFB;
     border-radius: 10px;
     margin-top: 4%;
-    margin-bottom: 4%;
     margin-left: 20%;
     margin-right: 20%;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 20px;
+    height: fit-content;
 }
 
 #popup-header {
     text-align: center;
 }
+
+@media screen and (max-width: 450px) {
+    .flex-container {
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .flex-container > div {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+
