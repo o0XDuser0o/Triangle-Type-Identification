@@ -6,6 +6,30 @@
     <title>Triangle Type Identification System</title>    
 </head>
 <body>
+    <div id="popupOverlay" class="hidden" onclick="close_doc()">
+        <div id="popup">
+            <h1 id="popup-header">How to use</h1>
+            <p class="popup-para">Input Fields for Side Lengths:</p>
+            <ul>
+                <li>Input Fields for Side Lengths:</li>
+                <li>Side 1: The first input field is labeled "Side 1". Enter the length of the first side in the field to the right of the label.</li>
+                <li>Side 2: The second input field is labeled "Side 2". Enter the length of the second side in the field to the right of the label.</li>
+                <li>Side 3: The third input field is labeled "Side 3". Enter the length of the third side in the field to the right of the label.</li>
+            </ul>
+            <p class="popup-para">Confirming the Input:</p>
+            <ul>
+                <li>Below the input fields, there is an "Enter" button. Click this button to confirm your inputs and calculate the type of triangle based on the entered side lengths.</li>
+            </ul>
+            <p class="popup-para">Resetting the Input Fields:</p>
+            <ul>
+                <li>Next to the "Enter" button, there is a "Reset" button. Use this to clear all the input fields and start over.</li>
+            </ul>
+        </div>
+      </div>
+    <div id="top">
+        <button class="brown-light-bg">English -> Thai</button>
+        <button onclick="show_doc()" class="brown-bg">Info</button>
+    </div>
     <h1>Triangle Type Identification </h1>
     <div class="flex-container">
         <div>

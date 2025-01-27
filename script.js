@@ -151,3 +151,11 @@ function reset(){
     const ctx = canvas.getContext("2d");
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
+
+function show_doc(){
+    document.getElementById("popupOverlay").classList.remove("hidden");
+}
+
+function close_doc(){
+    document.getElementById("popupOverlay").classList.add("hidden");
+}
