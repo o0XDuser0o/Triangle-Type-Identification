@@ -50,9 +50,9 @@ function validation(side_1,side_2,side_3) {
         console.log(side_1,side_2,side_3);
 
         if(
-            side_1 + side_2 <= side_3 ||
-            side_2 + side_3 <= side_1 ||
-            side_3 + side_1 <= side_2 
+            Math.floor(side_1* 100) + Math.floor(side_2* 100) <= Math.floor(side_3* 100) ||
+            Math.floor(side_2* 100) + Math.floor(side_3* 100) <= Math.floor(side_1* 100) ||
+            Math.floor(side_3* 100) + Math.floor(side_1* 100) <= Math.floor(side_2* 100)
         ){
             document.getElementById("alert_text").textContent = "Cannot form a triangle";
             document.getElementById("alert_text").style.visibility = "visible";
@@ -64,6 +64,9 @@ function validation(side_1,side_2,side_3) {
 }
 
 function identifier(side_1,side_2,side_3) {
+    side_1 = Math.floor(side_1*100)
+    side_2 = Math.floor(side_2*100)
+    side_3 = Math.floor(side_3*100)
     if (
         side_1 === side_2 &&
         side_2 === side_3
